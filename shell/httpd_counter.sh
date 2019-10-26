@@ -1,0 +1,1 @@
+printf "%s:%s\n" "Number of httpd running"  "$(ps aux | grep -w "[h]ttpd" | wc -l)"
