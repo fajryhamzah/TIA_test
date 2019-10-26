@@ -1,0 +1,5 @@
+RewriteEngine on
+
+RewriteRule (middlet|ajax|touch|wap)\/gift\/([\d])_[a-zA-Z0-9_&]+\/([\d])\/([\d])\/(.+) gift.php?view=$1&gift_id=$2&sender_id=$3&receiver_id=$4&additional=$5 [QSA,L]
+
+RewriteRule (middlet|ajax|touch|wap)\/gift\/([\d])_[a-zA-Z0-9_&]+\/([\d])\/([\d]) gift.php?view=$1&gift_id=$2&sender_id=$3&receiver_id=$4
