@@ -1,0 +1,1 @@
+SELECT DATE_FORMAT(date, "%D %a %b %Y") days,COUNT(IF(score > 0,1,NULL)) num_pos_scores, COUNT(IF(score<0,1,NULL)) num_neg_scores FROM assessments WHERE date BETWEEN "2011-03-01" AND "2011-04-30" GROUP BY date order by date ASC;
